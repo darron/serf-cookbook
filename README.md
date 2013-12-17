@@ -43,7 +43,7 @@ Installs enables and starts Serf using configuration files from [octohost](https
 Testing
 -------
 
-![Build Status](https://travis-ci.org/darron/serf-cookbook.png?branch=master)](https://travis-ci.org/darron/serf-cookbook)
+[![Build Status](https://travis-ci.org/darron/serf-cookbook.png?branch=master)](https://travis-ci.org/darron/serf-cookbook)
 
 The cookbook provides the following Rake tasks for testing:
 
