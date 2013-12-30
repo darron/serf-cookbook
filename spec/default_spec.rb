@@ -37,4 +37,7 @@ describe 'serf::default' do
     expect(chef_run).to start_service('serf')
   end
 
+  it 'creates a symlink' do
+    expect(chef_run).to create_link('/etc/init.d/serf')
+  end
 end
