@@ -16,9 +16,9 @@ Attributes
 ----------
 
 ```
-default['serf']['filename'] = '0.3.0_linux_amd64.zip'
+default['serf']['filename'] = '0.4.0_linux_amd64.zip'
 default['serf']['url'] = "https://dl.bintray.com/mitchellh/serf/#{default['serf']['filename']}"
-default['serf']['checksum'] = '9cb5635adc18b6ae7d161209ab2965967b3b22a79af4320bd264a2d7b40b96a0'
+default['serf']['checksum'] = '522ed4531b59f530d2a9e8f3d429a9dd2345e002316651abfc251bb1eb7266c0'
 default['serf']['tmp'] = "/tmp/#{default['serf']['filename']}"
 default['serf']['destination'] = '/usr/local/bin/serf'
 
@@ -49,7 +49,7 @@ The cookbook provides the following Rake tasks for testing:
 
     rake integration                  # Alias for kitchen:all
     rake kitchen:all                  # Run all test instances
-    rake kitchen:default-centos-64    # Run default-centos-64 test instance
+    rake kitchen:default-ubuntu-1004  # Run default-ubuntu-1004 test instance
     rake kitchen:default-ubuntu-1204  # Run default-ubuntu-1204 test instance
     rake lint                         # Lint Chef cookbooks
     rake rubocop                      # Run rubocop tests
@@ -63,7 +63,7 @@ License and Author
 
 Author:: Darron Froese (darron@froese.org)
 
-Copyright:: 2013, Darron Froese
+Copyright:: 2014, Darron Froese
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
