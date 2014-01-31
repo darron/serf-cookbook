@@ -18,9 +18,9 @@
 # limitations under the License.
 #
 
-default['serf']['filename'] = '0.3.0_linux_amd64.zip'
+default['serf']['filename'] = '0.4.0_linux_amd64.zip'
 default['serf']['url'] = "https://dl.bintray.com/mitchellh/serf/#{default['serf']['filename']}"
-default['serf']['checksum'] = '9cb5635adc18b6ae7d161209ab2965967b3b22a79af4320bd264a2d7b40b96a0'
+default['serf']['checksum'] = '522ed4531b59f530d2a9e8f3d429a9dd2345e002316651abfc251bb1eb7266c0'
 default['serf']['tmp'] = "/tmp/#{default['serf']['filename']}"
 default['serf']['destination'] = '/usr/local/bin/serf'
 

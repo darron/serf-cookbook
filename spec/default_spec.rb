@@ -10,7 +10,7 @@ describe 'serf::default' do
   end
 
   it 'grabs the serf dist file' do
-    expect(chef_run).to create_remote_file('/tmp/0.3.0_linux_amd64.zip')
+    expect(chef_run).to create_remote_file('/tmp/0.4.0_linux_amd64.zip')
   end
 
   it 'creates the config directory' do
