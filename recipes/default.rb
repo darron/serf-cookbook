@@ -26,7 +26,7 @@ remote_file node['serf']['tmp'] do
   owner 'root'
   group 'root'
   mode 00755
-  not_if { ::File.exists?(node['serf']['tmp']) }
+  not_if { ::File.exist?(node['serf']['tmp']) }
 end
 
 bash 'extract_serf' do
@@ -35,7 +35,7 @@ bash 'extract_serf' do
     unzip #{node['serf']['filename']}
     mv serf #{node['serf']['destination']}
     EOH
-  not_if { ::File.exists?(node['serf']['destination']) }
+  not_if { ::File.exist?(node['serf']['destination']) }
 end
 
 directory node['serf']['config_dir'] do
